@@ -1,0 +1,10 @@
+version: '2.1'
+services:
+  iptables:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+    restart: never
