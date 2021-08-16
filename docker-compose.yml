@@ -1,6 +1,7 @@
 version: '2.1'
 services:
   iptables:
+    privileged: true
     build:
       dockerfile: Dockerfile
       context: .
